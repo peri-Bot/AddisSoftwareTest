@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--gruvbox-dark-hard: 29 32 33;
+		--gruvbox-dark0: 40 40 40;
+		--gruvbox-dark1: 60 56 54;
+		--gruvbox-dark2: 80 73 69;
+		--gruvbox-dark3: 102 92 84;
+		--gruvbox-light0: 251 241 199;
+		--gruvbox-light1: 235 219 178;
+		--gruvbox-light2: 213 196 161;
+		--gruvbox-light3: 189 174 147;
+		--gruvbox-red: 251 73 52;
+		--gruvbox-green: 184 187 38;
+		--gruvbox-yellow: 250 189 47;
+		--gruvbox-blue: 131 165 152;
+		--gruvbox-purple: 211 134 155;
+		--gruvbox-aqua: 142 192 124;
+		--gruvbox-medium: 146 131 116;
+		--gruvbox-orange: 254 128 25;
+		--gruvbox-balance-card: 173 193 171;
+		--gruvbox-border-color: 245 174 103;
+		--gruvbox-button: 226 160 100;
+	}
+}
+
+@layer base {
+	body {
+		@apply bg-gruvbox-light0 dark:bg-gruvbox-dark0 text-gruvbox-dark0 dark:text-gruvbox-light0;
+	}
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
